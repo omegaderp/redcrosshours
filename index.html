@@ -19,8 +19,6 @@
     <li>other club and chapter events!</li>
   </ul>
   <p>For every few hours you earn, you will receive a Silicon Valley badge on your profile picture! There are badges for 1, 3, 5, 7, 10, and 15 hours and we hope you can earn all of them. Generate your profile picture and badges with the template below:</p>
-  <div id="container finalProfile">results
-  </div>
   <blockquote>
   I've volunteered <input type="text" id="hourNum"> hours for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was <input id="volunteer" type="text" placeholder="making cards for veterans">!
   </blockquote>
@@ -28,7 +26,7 @@
   </div>
   
   <script>
-  $(function wow() {
+  function wow() {
     alert(document.getElementById("hourNum").value + " entered the function");
     var img = "";
     var hrs = document.getElementById("hourNum").value;
@@ -66,7 +64,9 @@
       var message = "I've volunteered " + hrstext + " hours for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was " + document.getElementById("volunteer").value + "!<br><img src='" + img + "'>";
       alert(message);
       document.getElementById("finalProfile").innerHTML = message;
-  })
+  }
   </script>
+  <div id="container finalProfile">results
+  </div>
 </body>
 </html>
