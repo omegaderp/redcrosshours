@@ -82,11 +82,12 @@
       alert(img);
       alert(hrstext);
       var message = "I've volunteered " + hrstext + " hours for Silicon Valley Red Cross' Battle of the Bays so far! My last volunteer event was " + document.getElementById("volunteer").value + 
-          ".<br>Create your Battle of the Bay badges at http://tinyurl.com/rcbadges for Battle of the Bays, the March competition between the Silicon Valley, East Bay, and West Bay chapters for the most hours.";
+          ".&#13;&#10;Create your Battle of the Bay badges at http://tinyurl.com/rcbadges for Battle of the Bays, the March competition between the Silicon Valley, East Bay, and West Bay chapters for the most hours.";
       alert(message);
       var imageDownload = "<a href='" + img + "' download><button class='btn btn-success'>Download Picture</button></a><br><img style='margin-top: 10px;' class='img-thumbnail img-responsive' src='" + img + "'>.";
       alert(imageDownload);
       document.getElementById("finalProfile").innerHTML = "<textarea id='descriptionGen' class='form-control' rows='4'>" + imageDownload;
+      alert('m8');
       document.getElementById("descriptionGen").value = message;
       document.getElementById("finalProfile").className += " well";
   }
