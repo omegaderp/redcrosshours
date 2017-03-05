@@ -4,7 +4,7 @@
 <title>Red Cross Hours Profile Generator</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <style>
-    .form-control {
+    blockquote .form-control {
       display:inline;
       width:auto;
     }
@@ -87,12 +87,12 @@
       var imageDownload = "<a href='" + img + "' download><button class='btn btn-success'>Download Picture</button></a><br><img style='margin-top: 10px;' class='img-thumbnail img-responsive' src='" + img + "'>.";
       alert(imageDownload);
     document.getElementById("descriptionGen").value = message;
-    document.getElementById("finalProfile").innerHTML = imageDownload;
+    document.getElementById("finalProfile").innerHTML = "<input id='descriptionGen' class='form-control'>" + imageDownload;
       document.getElementById("finalProfile").className += " well";
   }
   </script>
   <div class="container" id="finalProfile" style="margin-top:20px;">
-    <input id="descriptionGen" class="form-control">
+    
   </div>
 </body>
 </html>
