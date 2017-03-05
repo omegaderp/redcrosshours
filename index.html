@@ -38,7 +38,7 @@
     <li>CPR and first aid training</li>
     <li>special club and chapter opportunities</li>
   </ul>
-  <p>For every few hours you earn, you will receive a Silicon Valley badge on your profile picture! There are badges for 1, 3, 5, 7, 10, and 15 hours to earn, so check back here (at <a href="https://omegaderp.github.io/redcrosshours/">tinyurl.com/rcbadges</a>)to receive your newest badge. Generate your profile picture and badges with the template below:</p>
+  <p>For every few hours you earn, you will receive a Silicon Valley badge on your profile picture! There are badges for 1, 3, 5, 7, 10, and 15 hours to earn, so check back here (at <a href="https://omegaderp.github.io/redcrosshours/">tinyurl.com/rcbadges</a>) to receive your newest badge. Generate your profile picture and badges with the template below:</p>
   <blockquote style="line-height:40px;">
   I've volunteered <input type="text" id="hourNum" class="form-control" placeholder="5" style="width:70px;"> hours for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was <input id="volunteer" class="form-control" type="text" placeholder="making cards for veterans">!
   </blockquote>
@@ -49,7 +49,7 @@
     alert('your journey begins');
   function wow() {
     alert(document.getElementById("hourNum").value + " entered the function");
-    var img = "";
+    var img = "pf0.png";
     var hrs = document.getElementById("hourNum").value;
     var hrstext = hrs;
     if (hrs > 744) {
@@ -75,7 +75,6 @@
       }
       else if (hrs < 0) {
       hrstext = "apparently " + hrs;
-      img="pf0.png";
       }
       else {
       alert("Unfortunately, there's no input validation yet, so your result will not make much sense. Try again with a number in the first input box.");
