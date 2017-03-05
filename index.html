@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Red Cross Hours Profile Generator</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+  <header class="jumbotron site-header text-center">
+    <div class="container">
+      <h1>Red Cross Battle of the Bays Profile Generator</h1>
+    </div>
+  </header>
+  <div class="container">
+  <p>Battle of the Bays is a competition between Silicon Valley and the East and West Bay Chapter youth volunteers for the most hours per person. We're also aiming for:</p>
+  <ul>
+    <li>disaster prepardness</li>
+    <li>community disaster education</li>
+    <li>CPR and first aid training</li>
+    <li>other club and chapter events!</li>
+  </ul>
+  <p>For every few hours you earn, you will receive a Silicon Valley badge on your profile picture! There are badges for 1, 3, 5, 7, 10, and 15 hours and we hope you can earn all of them. Generate your profile picture and badges with the template below:</p>
+  <blockquote>
+  I've volunteered <input type="text" id="hourNum"></input> hours for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was <input id="volunteer" type="text" placeholder="making cards for veterans">!
+  </blockquote>
+  <button onclick="generate(document.getElementById("hourNum"), document.getElementById("volunteer"))">Submit</button>
+  </div>
+  <div id="container" id="results">
+  </div>
+  <script>
+  function generate(hrs, desc) {
+    var img = "";
+    var hrstext = hrs;
+    if (hrs > 744) {
+      hrstext= hrs + ", more than the number of hours in March somehow,";
+    }
+    else if (hrs >= 15) {
+      img = "pf15.png";
+    }
+    else if (hrs >= 10) {
+      img = "pf10.png";
+      }
+     else if (hrs >= 7) {
+      img = "pf7.png";
+      }
+      else if (hrs >= 5) {
+      img = "pf5.png";
+      }
+      else if (hrs >=3) {
+      img="pf3.png";
+      }
+      else if (hrs>=1) {
+      img="pf1.png";
+      }
+      else if (hrs < 0) {
+      hrstext = "apparently " + hrs;
+      img="pf0.png";
+      }
+      else {
+      alert("good hax m8 or just an innocent mistake. anyway, it worked. :)");
+      }
+      document.getElementById("results").innerHTML = "I've volunteered " + hrstext + "hours for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was " + desc "!<br><img src='" + img + "'>";
+  }
+  </script>
+</body>
+</html>
