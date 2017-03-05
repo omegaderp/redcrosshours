@@ -78,8 +78,8 @@
       else {
       alert("Unfortunately, there's no input validation yet, so your result will not make much sense. Try again with a number in the first input box.");
       }
-      var message = "<p>I've volunteered " + hrstext + " hours for Silicon Valley Red Cross' Battle of the Bays so far! My last volunteer event was " + document.getElementById("volunteer").value + 
-          ".</p><p>Create your Battle of the Bay badges at <a href='https://omegaderp.github.io/redcrosshours/'>http://tinyurl.com/rcbadges</a> for Battle of the Bays, the March competition between the Silicon Valley, East Bay, and West Bay chapters for the most hours.</p><a href='" + img + "' download><button class='btn btn-success'>Download Picture</button></a><br><img style='margin-top: 10px;' class='img-thumbnail img-responsive' src='" + img + "'>.";
+      var message = "<input type='text' value='I've volunteered " + hrstext + " hours for Silicon Valley Red Cross' Battle of the Bays so far! My last volunteer event was " + document.getElementById("volunteer").value + 
+          ".<br>Create your Battle of the Bay badges at <a href='https://omegaderp.github.io/redcrosshours/'>http://tinyurl.com/rcbadges</a> for Battle of the Bays, the March competition between the Silicon Valley, East Bay, and West Bay chapters for the most hours.'><a href='" + img + "' download><button class='btn btn-success'>Download Picture</button></a><br><img style='margin-top: 10px;' class='img-thumbnail img-responsive' src='" + img + "'>.";
       document.getElementById("finalProfile").innerHTML = message;
       document.getElementById("finalProfile").className += " well";
   }
