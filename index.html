@@ -8,11 +8,23 @@
       display:inline;
       width:auto;
     }
+    .site-header {
+      background-color: rgb(255,92,92); 
+      background: rgba(255,175,75,1);
+      background: -moz-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,92,92,1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,175,75,1)), color-stop(100%, rgba(255,92,92,1)));
+      background: -webkit-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,92,92,1) 100%);
+      background: -o-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,92,92,1) 100%);
+      background: -ms-linear-gradient(left, rgba(255,175,75,1) 0%, rgba(255,92,92,1) 100%);
+      background: linear-gradient(to right, rgba(255,175,75,1) 0%, rgba(255,92,92,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff5c5c', GradientType=1 );
+      color:white;
+    }
   </style>
   <meta charset="utf-8">
 </head>
 <body>
-  <header class="jumbotron site-header text-center" style="background-color: rgb(255,92,92);">
+  <header class="jumbotron site-header text-center">
     <div class="container">
       <h1>Red Cross Profile Generator</h1>
     </div>
