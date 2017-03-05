@@ -28,9 +28,9 @@
   </div>
   <script>
   function wow() {
-    alert(document.getElementById("hourNum").innerHTML);
+    alert(document.getElementById("hourNum").value);
     var img = "";
-    var hrs = document.getElementById("hourNum").innerHTML;
+    var hrs = document.getElementById("hourNum").value;
     var hrstext = hrs;
     if (hrs > 744) {
       hrstext= hrs + ", more than the number of hours in March somehow,";
@@ -58,9 +58,9 @@
       img="pf0.png";
       }
       else {
-      alert("good hax m8 or just an innocent mistake. anyway, it worked. :)");
+      alert("sorry i messed up :(");
       }
-      document.getElementById("results").innerHTML = "I've volunteered " + hrstext + "hours for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was " + document.getElementById("volunteer").innerHTML + "!<br><img src='" + img + "'>";
+      document.getElementById("results").innerHTML = "I've volunteered " + hrstext + "hours for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was " + document.getElementById("volunteer").value + "!<br><img src='" + img + "'>";
   }
   </script>
 </body>
