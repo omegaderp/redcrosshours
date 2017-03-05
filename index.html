@@ -70,8 +70,8 @@
       }
     alert(img + " image link");
     alert(hrstext + "hours text");
-      var message = "I've volunteered " + hrstext + " hours for Silicon Valley Red Cross' Battle of the Bays so far! My last volunteer event was " + document.getElementById("volunteer").value + 
-          ".<br>Create your Battle of the Bay badges at <a href='https://omegaderp.github.io/redcrosshours/'>http://tinyurl.com/rcbadges</a>.<br><a href='" + img + "' download><button class='btn btn-primary'>Download Profile</button></a><br><img src='" + img + "'>.";
+      var message = "<p>I've volunteered " + hrstext + " hours for Silicon Valley Red Cross' Battle of the Bays so far! My last volunteer event was " + document.getElementById("volunteer").value + 
+          ".</p><p>Create your Battle of the Bay badges at <a href='https://omegaderp.github.io/redcrosshours/'>http://tinyurl.com/rcbadges</a>.</p><a href='" + img + "' download><button class='btn btn-primary'>Download Profile</button></a><br><img src='" + img + "'>.";
       alert(message);
       document.getElementById("finalProfile").innerHTML = message;
     document.getElementById("finalProfile").className += " well";
