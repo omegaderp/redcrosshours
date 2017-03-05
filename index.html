@@ -74,9 +74,10 @@
           ".<br>Create your Battle of the Bay badges at <a href='https://omegaderp.github.io/redcrosshours/'>http://tinyurl.com/rcbadges</a>.<br><a href='" + img + "' download><button class='btn btn-primary'>Download Profile</button></a><br><img src='" + img + "'>.";
       alert(message);
       document.getElementById("finalProfile").innerHTML = message;
+    document.getElementById("finalProfile").className += " well";
   }
   </script>
-  <div class="container well" id="finalProfile">
+  <div class="container" id="finalProfile">
   </div>
 </body>
 </html>
