@@ -62,7 +62,9 @@
       }
     alert(img + " image link");
     alert(hrstext + "hours text");
-      document.getElementById("results").innerHTML = "I've volunteered " + hrstext + "hours for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was " + document.getElementById("volunteer").value + "!<br><img src='" + img + "'>";
+      var message = "I've volunteered " + hrstext + " hours for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was " + document.getElementById("volunteer").value + "!<br><img src='" + img + "'>";
+      alert(message);
+      document.getElementById("results").innerHTML = message;
   }
   </script>
 </body>
