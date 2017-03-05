@@ -86,8 +86,8 @@
       alert(message);
       var imageDownload = "<a href='" + img + "' download><button class='btn btn-success'>Download Picture</button></a><br><img style='margin-top: 10px;' class='img-thumbnail img-responsive' src='" + img + "'>.";
       alert(imageDownload);
-    document.getElementById("descriptionGen").value = message;
-    document.getElementById("finalProfile").innerHTML = "<input id='descriptionGen' class='form-control'>" + imageDownload;
+      document.getElementById("finalProfile").innerHTML = "<input id='descriptionGen' class='form-control'>" + imageDownload;
+      document.getElementById("descriptionGen").value = message;
       document.getElementById("finalProfile").className += " well";
   }
   </script>
