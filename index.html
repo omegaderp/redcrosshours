@@ -46,10 +46,11 @@
   </div>
   
   <script>
-    
+    alert("page has died for now");
   function wow() {
     var img = "pf0.png";
     var hrs = document.getElementById("hourNum").value;
+    alert("entered function with " + hrs);
     var hrstext = hrs;
     if (hrs > 744) {
       hrstext= hrs + ", more than the number of hours in March somehow,";
@@ -78,10 +79,14 @@
       else {
       alert("Unfortunately, there's no input validation yet, so your result will not make much sense. Try again with a number in the first input box.");
       }
+      alert(img);
+      alert(hrstext);
       var message = "I've volunteered " + hrstext + " hours for Silicon Valley Red Cross' Battle of the Bays so far! My last volunteer event was " + document.getElementById("volunteer").value + 
           ".<br>Create your Battle of the Bay badges at <a href='https://omegaderp.github.io/redcrosshours/'>http://tinyurl.com/rcbadges</a> for Battle of the Bays, the March competition between the Silicon Valley, East Bay, and West Bay chapters for the most hours.";
+      alert(message);
       var imageDownload = "<a href='" + img + "' download><button class='btn btn-success'>Download Picture</button></a><br><img style='margin-top: 10px;' class='img-thumbnail img-responsive' src='" + img + "'>.";
-      document.getElementById("finalProfile").innerHTML = message + imageDownload;
+      alert(imageDownload);
+    document.getElementById("finalProfile").innerHTML = message + imageDownload;
       document.getElementById("finalProfile").className += " well";
   }
   </script>
