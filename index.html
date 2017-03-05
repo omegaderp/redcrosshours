@@ -49,37 +49,43 @@
   function wow() {
     var img = "pf0.png";
     var hrs = document.getElementById("hourNum").value;
-    var hrstext = hrs;
+    var hrstext = hrs + " hours";
     if (hrs > 744) {
       alert("Sure you did.");
-      hrstext= hrs + ", more than the number of hours in March somehow,";
+      hrstext= hrs + " hours, more than the number of hours in March somehow,";
     }
     else if (hrs >= 15) {
       img = "pf15.png";
+      hrstext = hrs + " hours, earning the 15 hour badge";
     }
     else if (hrs >= 10) {
       img = "pf10.png";
+      hrstext = hrs + " hours, earning the 10 hour badge";
       }
      else if (hrs >= 7) {
       img = "pf7.png";
+       hrstext = hrs + " hours, earning the 7 hour badge";
       }
       else if (hrs >= 5) {
       img = "pf5.png";
+      hrstext = hrs + " hours, earning the 5 hour badge";
       }
       else if (hrs >=3) {
       img="pf3.png";
+      hrstext = hrs + " hours, earning the 3 hour badge";
       }
       else if (hrs>=1) {
       img="pf1.png";
+      hrstext = hrs + " hours, earning the 1 hour badge";
       }
       else if (hrs < 0) {
-      hrstext = "apparently " + hrs;
+      hrstext = "a disappointing " + hrs + " hours";
       }
       else {
       alert("Unfortunately, your input doesn't work, so your result will not make much sense. Try again with a number in the first input box.");
       }
       
-      var message = "I've volunteered " + hrstext + " hours for Silicon Valley Red Cross' Battle of the Bays so far! My last volunteer event was " + document.getElementById("volunteer").value + 
+      var message = "I've volunteered " + hrstext + " for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was " + document.getElementById("volunteer").value + 
           ".\nCreate your Battle of the Bay badges at http://tinyurl.com/rcbadges for Battle of the Bays, the March competition between the Silicon Valley, East Bay, and West Bay chapters for the most hours.";
       var imageDownload = "<a href='" + img + "' download><button class='btn btn-success'>Download Picture</button></a><br><img style='margin-top: 10px;' class='img-thumbnail img-responsive' src='" + img + "'>.";
       document.getElementById("finalProfile").innerHTML = "<textarea id='descriptionGen' class='form-control' rows='4' style ='margin-bottom:15px;'></textarea>" + imageDownload;
