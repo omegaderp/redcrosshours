@@ -20,15 +20,16 @@
   </ul>
   <p>For every few hours you earn, you will receive a Silicon Valley badge on your profile picture! There are badges for 1, 3, 5, 7, 10, and 15 hours and we hope you can earn all of them. Generate your profile picture and badges with the template below:</p>
   <blockquote>
-  I've volunteered <input type="text" id="hourNum"></input> hours for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was <input id="volunteer" type="text" placeholder="making cards for veterans">!
+  I've volunteered <input type="text" id="hourNum"> hours for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was <input id="volunteer" type="text" placeholder="making cards for veterans">!
   </blockquote>
-  <button onclick="generate(document.getElementById("hourNum"), document.getElementById("volunteer"))">Submit</button>
+  <button onclick="generate()">Submit</button>
   </div>
   <div id="container" id="results">
   </div>
   <script>
-  function generate(hrs, desc) {
+  function generate() {
     var img = "";
+    var hrs = document.getElementById("hourNum").innerHTML;
     var hrstext = hrs;
     if (hrs > 744) {
       hrstext= hrs + ", more than the number of hours in March somehow,";
@@ -58,7 +59,7 @@
       else {
       alert("good hax m8 or just an innocent mistake. anyway, it worked. :)");
       }
-      document.getElementById("results").innerHTML = "I've volunteered " + hrstext + "hours for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was " + desc "!<br><img src='" + img + "'>";
+      document.getElementById("results").innerHTML = "I've volunteered " + hrstext + "hours for Silicon Valley Red Cross' Battle of the Bays! My last volunteer event was " + , document.getElementById("volunteer").innerHTML "!<br><img src='" + img + "'>";
   }
   </script>
 </body>
